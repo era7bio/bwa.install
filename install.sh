@@ -8,6 +8,9 @@ bwaUrl="http://resources.ohnosequences.com/bwa/bwa-0.6.2.tar.bz2"
 mkdir -p /opt/bwa
 cd /opt/bwa
 
+# prereqs
+yum -y install zlib zlib-devel
+
 wget ${bwaUrl} -O bwa.tar.bz2
 tar -xjf bwa.tar.bz2
 rm bwa.tar.bz2
